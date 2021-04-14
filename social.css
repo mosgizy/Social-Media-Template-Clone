@@ -189,7 +189,10 @@ main{
     font-size:14px;
     padding:10px 14px;
     opacity:0.7;
-    border:none;
+    outline:none;
+}
+
+.status > input:active{
     outline:none;
 }
 
