@@ -390,6 +390,10 @@ footer h1{
 /*tablet and big screen*/
 
 @media only screen and (min-width:600px){
+    .container{
+	max-width:1400px;
+	margin:auto;
+    }
 
     .header{
 	top:0px;
@@ -660,15 +664,5 @@ footer h1{
 
     .bugs,.ads{
 	
-    }
-}
-
-
-@media only screen and (min-width:1520px){
-    .container{
-	max-width:78%;
-	margin:auto;
-	margin-top:80px;
-	margin-bottom:20px;
     }
 }
