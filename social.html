@@ -3,6 +3,7 @@
   <head>
     <title>Social Media</title>
     <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta charset="utf-8">
     <link rel="stylesheet" href="social.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -57,19 +58,38 @@
 	</div>
 
 	<div class="content">
-	  
-	  <div class="sub-content">
-	    <a href="#" class="fas fa-circle-notch"><span>My Groups</span></a>
+
+	  <div class="container-sub-content">
+	    <div class="sub-content"  onclick="toggle('0')">
+	      <a href="#" class="fas fa-circle-notch"><span>My Groups</span></a>
+	    </div>
+	      <div class="drop-content drop-content-text" id="show0">
+		<p>Some text...</p> 
+	      </div>
 	  </div>
 
-	  <div class="sub-content">
-	    <a href="#" class="fas fa-calendar-check"><span>My Events</span></a>
+	  <div class="container-sub-content">
+	    <div class="sub-content" onclick="toggle('1')">
+	      <a href="#" class="fas fa-calendar-check"><span>My Events</span></a>
+	    </div>
+	    <div class="drop-content drop-content-text"  id="show1">
+	      <p>Some text...</p>
+	    </div>
 	  </div>
 
-	  <div class="sub-content">
-	    <a href="#" class="fas fa-users"><span>My Photos</span></a>
+	  <div class="container-sub-content">
+	    <div class="sub-content"  onclick="toggle('2')">
+	      <a href="#" class="fas fa-users"><span>My Photos</span></a>
+	    </div>
+	    <div class="drop-content  drop-content-img" id="show2">
+	      <img src="https://www.w3schools.com/w3images/lights.jpg">
+	      <img src="https://www.w3schools.com/w3images/nature.jpg">
+	      <img src="https://www.w3schools.com/w3images/mountains.jpg">
+	      <img src="https://www.w3schools.com/w3images/forest.jpg">
+	      <img src="https://www.w3schools.com/w3images/nature.jpg">
+	      <img src="https://www.w3schools.com/w3images/snow.jpg">
+	    </div>
 	  </div>
-	  
 	</div>
 
 	<div class="interest">

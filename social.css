@@ -6,7 +6,6 @@
 
 body{
     background-color:#f5f7f8;
-    font-family:"Lexend",san-serif;
 }
 
 .container{
@@ -76,7 +75,7 @@ img{
     margin:0px 16px 40px 16px;
 }
 
-section > .profile,.interest, main .status,.upload, .upcoming, .friend,.bug,.ads{
+section > .profile,.interest, main .status,.upload, .upcoming, .friend,.bug,.ads,.drop-content{
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding:12px 18px;
     border-radius:5px;
@@ -91,7 +90,8 @@ section > .profile,.interest, main .status,.upload, .upcoming, .friend,.bug,.ads
 }
 
 .profile > img{
-    width:110px;
+    max-width:110px;
+    min-width:110px;
     border-radius:50%;
 }
 
@@ -141,7 +141,7 @@ hr{
     font-size:14px;
 }
 
-.content > .sub-content{
+.sub-content, .drop-content{
     padding:10px 18px;
 }
 
@@ -161,6 +161,35 @@ hr{
 
 .sub-content:hover a span, .status a:hover span, .upload a:hover span{
     color:black;
+}
+
+.drop-content{
+    display:none;
+    background-color:white;
+    color:black;
+    border-radius:0px;;
+}
+
+.drop-content-text{
+    width:100%;
+}
+
+.hide{
+    display:none;
+}
+
+.show{
+    display:block;
+}
+
+.drop-content-img{
+
+}
+
+.drop-content-img img{
+    width:100%;
+    height:auto;
+    padding:20px 12px;
 }
 
 /*content end here*/
@@ -192,7 +221,7 @@ main{
     outline:none;
 }
 
-.status > input:active{
+.status > input:focus{
     outline:none;
 }
 
@@ -458,6 +487,14 @@ footer h1{
 	top:85px;
     }
 
+    .drop-content-text{
+	width:100%;
+    }
+
+    .drop-content-img{
+	grid-template-columns:auto auto;
+    }
+
     section .interest{
 	margin-top:20px;
     }
@@ -568,7 +605,8 @@ footer h1{
     }
 
     .profile > img{
-	max-width:200px;
+	max-width:110px;
+	min-width:110px;
     }
     
     main{
@@ -594,6 +632,10 @@ footer h1{
 	justify-content:space-between;
     }
 
+    .upload2-img{
+	padding:15px 0px 20px 0px;
+    }
+
     aside{
 	flex:18%;
     }
@@ -616,6 +658,7 @@ footer h1{
 	
     }
 }
+
 
 @media only screen and (min-width:1520px){
     .container{
